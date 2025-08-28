@@ -1,3 +1,9 @@
-.header{
+.header {
     background-color: #ff8000;
+}
+
+.content_total {
+    overflow-y: scroll;
+    scrollbar-color: #ff8000;
+    scrollbar-width: thin;
 }
