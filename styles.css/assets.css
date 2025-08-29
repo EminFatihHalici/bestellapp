@@ -1,10 +1,15 @@
 .header_logo {
-    height: 86px;
+    height: 64px;
     width: 86px;
+    padding-left: 24px;
 }
 
 .restaurant_img {
     width: 1200px;
     height: 250px;
     object-fit: cover;
+}
+
+.restaurant_rating{
+    color: #ff8000;
 }
