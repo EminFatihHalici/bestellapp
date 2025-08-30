@@ -15,7 +15,7 @@
 .media_hide{
     text-decoration: none;
     color: #545454;
-    margin-left: 16px;
+    margin-right: 16px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -33,4 +33,8 @@
 .content_restaurant_navbar{
     display: flex;
     align-items: center;
+}
+
+.content_restaurant_head{
+    max-width: 1200px;
 }
