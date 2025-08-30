@@ -27,6 +27,7 @@
 .content_restaurant_navbar {
     background-color: #f0eeeb;
     height: 36px;
+    max-width: 1200px;
 }
 
 .content_restaurant_navbar{
