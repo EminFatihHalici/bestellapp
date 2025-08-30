@@ -11,3 +11,25 @@
 .footer{
     background-color: #545454;
 }
+
+.media_hide{
+    text-decoration: none;
+    color: #545454;
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.media_hide:hover{
+    color: #ff8000;
+}
+
+.content_restaurant_navbar {
+    background-color: #f0eeeb;
+    height: 36px;
+}
+
+.content_restaurant_navbar{
+    display: flex;
+    align-items: center;
+}
