@@ -10,6 +10,12 @@
     object-fit: cover;
 }
 
-.restaurant_rating{
+.restaurant_rating {
     color: #ff8000;
+}
+
+.content_restaurant_category_img {
+    width: 1200px;
+    height: 180px;
+    object-fit: cover;
 }
