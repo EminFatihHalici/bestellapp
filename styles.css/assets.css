@@ -13,3 +13,10 @@
 .restaurant_rating{
     color: #ff8000;
 }
+
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+}
