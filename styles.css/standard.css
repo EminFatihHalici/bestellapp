@@ -8,3 +8,7 @@ body {
     scroll-behavior: smooth;
     font-family: "Ubuntu";
 }
+
+.pd_l{
+    padding-left: 24px;
+}
