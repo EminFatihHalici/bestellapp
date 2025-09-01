@@ -6,6 +6,7 @@
     overflow-y: scroll;
     scrollbar-color: #ff8000;
     scrollbar-width: thin;
+    display:flex ;
 }
 
 .footer{
@@ -27,14 +28,26 @@
 .content_restaurant_navbar {
     background-color: #f0eeeb;
     height: 36px;
-    max-width: 1200px;
-}
-
-.content_restaurant_navbar{
+    max-width: 100%;
     display: flex;
     align-items: center;
 }
 
 .content_restaurant_head{
     max-width: 1200px;
+}
+
+.content_restaurant{
+    width: calc(100% - 300px);
+}
+
+.basket_stickyrail {
+    width: 300px;
+    flex-grow: 1;
+}
+
+.basket{
+    width: 100%;
+    position: sticky;
+    top: 0;
 }
