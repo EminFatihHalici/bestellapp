@@ -41,14 +41,3 @@
     width: calc(100% - 300px);
     padding: 16px;
 }
-
-.basket_stickyrail {
-    width: 300px;
-    flex-grow: 1;
-}
-
-.basket{
-    width: 100%;
-    position: sticky;
-    top: 0;
-}
