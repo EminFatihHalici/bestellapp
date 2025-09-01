@@ -36,8 +36,15 @@
 .content_restaurant_head{
     max-width: 1200px;
 }
-
+ 
 .content_restaurant{
     width: calc(100% - 300px);
-    padding: 16px;
+}
+
+.pizza{
+    height: 180px;
+}
+
+.pizza:hover{
+    background-color: #f0eeeb;
 }
