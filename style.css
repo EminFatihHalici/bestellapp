@@ -39,6 +39,7 @@
 
 .content_restaurant{
     width: calc(100% - 300px);
+    padding: 16px;
 }
 
 .basket_stickyrail {
