@@ -7,6 +7,7 @@
     scrollbar-color: #ff8000;
     scrollbar-width: thin;
     display:flex ;
+    height: 100vh;
 }
 
 .footer{
@@ -39,12 +40,14 @@
  
 .content_restaurant{
     width: calc(100% - 300px);
+    display: flex;
+    flex-direction: column;
 }
 
-.pizza{
+.food_content_section{
     height: 180px;
 }
 
-.pizza:hover{
+.food_content_section:hover{
     background-color: #f0eeeb;
 }

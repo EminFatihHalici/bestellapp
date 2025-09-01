@@ -19,3 +19,8 @@
     height: 180px;
     object-fit: cover;
 }
+
+.price_section{
+    font-weight: bold;
+    color: #ff8000;
+}
