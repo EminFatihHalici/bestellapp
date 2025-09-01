@@ -46,8 +46,10 @@
 
 .food_content_section{
     height: 180px;
+    border: solid;
+    border-color: #f0eeeb;
 }
 
 .food_content_section:hover{
-    background-color: #f0eeeb;
+    background-color: #FF930F78;
 }
