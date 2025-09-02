@@ -48,6 +48,7 @@
     height: 180px;
     border: solid;
     border-color: #f0eeeb;
+    position: relative;
 }
 
 .food_content_section:hover{

@@ -37,4 +37,14 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border: 2px solid #f0eeeb;
+    top: 2px;
+    right: 2px;
+    position: absolute;
+    z-index: 1;
+}
+
+.plus_icon:hover {
+    background-color: #f0eeeb;
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
