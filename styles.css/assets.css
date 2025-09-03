@@ -48,3 +48,8 @@
     transform: scale(1.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+.total_sum{
+    font-weight: bold;
+    color: black;
+}

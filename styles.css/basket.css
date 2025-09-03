@@ -1,20 +1,89 @@
-
 .basket_stickyrail {
     width: 300px;
     flex-grow: 1;
+    padding-bottom: 16px;
+    text-align: center;
+    border-bottom: solid;
+    border-bottom-color: #f0eeeb;
 }
 
-.basket{
+.basket {
     width: 100%;
     position: sticky;
     top: 0;
 }
 
-.basket_head{
+.basket_head {
+    padding-bottom: 16px;
     text-align: center;
+    border-bottom: solid;
+    border-bottom-color: #f0eeeb;
 }
 
-aside{
+aside {
     position: sticky;
     top: 0;
+}
+
+.basket_minus_icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:
+        linear-gradient(orange 0 0),
+        linear-gradient(orange 0 0);
+    background-position: center;
+    background-size: 50% 4px, 4px 50%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.basket_plus_icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:
+        linear-gradient(orange 0 0),
+        linear-gradient(orange 0 0);
+    background-position: center;
+    background-size: 50% 4px, 4px 50%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.delete_bin {
+    width: 26px;
+    height: 26px;
+}
+
+.p_right {
+    padding-right: 28px;
+}
+
+.p_left {
+    padding-left: 20px;
+}
+
+.basket_order {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    color: #675e54;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+.total_sum {
+    font-weight: bold;
+    color: black;
+}
+
+.p_top {
+    padding-top: 8px;
 }
