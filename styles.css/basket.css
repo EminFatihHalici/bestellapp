@@ -13,3 +13,8 @@
 .basket_head{
     text-align: center;
 }
+
+aside{
+    position: sticky;
+    top: 0;
+}
