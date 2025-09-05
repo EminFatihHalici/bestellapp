@@ -1,6 +1,6 @@
 .basket_stickyrail {
-    width: 300px;
-    flex-grow: 1;
+    position: sticky;
+    top: 0;
     padding-bottom: 16px;
     text-align: center;
     border-bottom: solid;
@@ -21,8 +21,8 @@
 }
 
 aside {
-    position: sticky;
-    top: 0;
+   flex-grow: 1;
+   width: 300px;
 }
 
 .basket_minus_icon {

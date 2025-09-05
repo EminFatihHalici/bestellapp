@@ -3,11 +3,7 @@
 }
 
 .content_total {
-    overflow-y: scroll;
-    scrollbar-color: #ff8000;
-    scrollbar-width: thin;
     display:flex ;
-    height: 100vh;
 }
 
 .footer{
