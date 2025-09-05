@@ -63,3 +63,11 @@
 ::-webkit-scrollbar-thumb:hover {
   background: orange; 
 }
+
+.content_restaurant_category{
+    padding: 16px;
+}
+
+.pd_left_8{
+    padding-left: 8px;
+}
