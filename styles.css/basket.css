@@ -21,8 +21,8 @@
 }
 
 aside {
-   flex-grow: 1;
-   width: 300px;
+    flex-grow: 1;
+    width: 300px;
 }
 
 .basket_minus_icon {
@@ -85,4 +85,25 @@ aside {
 
 .p_top {
     padding-top: 8px;
+}
+
+.basket_responsive_closed {
+    display: none;
+}
+
+.basket_header {
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 770px) {
+    .basket_responsive_closed {
+        display: block;
+        width: 100%;
+        background-color: blue;
+    }
+
+    aside {
+        display: none;
+    }
 }

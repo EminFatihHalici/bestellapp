@@ -3,14 +3,14 @@
 }
 
 .content_total {
-    display:flex ;
+    display: flex;
 }
 
-.footer{
+.footer {
     background-color: #545454;
 }
 
-.media_hide{
+.media_hide {
     text-decoration: none;
     color: #545454;
     margin-right: 16px;
@@ -18,7 +18,7 @@
     font-weight: bold;
 }
 
-.media_hide:hover{
+.media_hide:hover {
     color: #ff8000;
 }
 
@@ -30,48 +30,58 @@
     align-items: center;
 }
 
-.content_restaurant_head{
+.content_restaurant_head {
     max-width: 1200px;
 }
- 
-.content_restaurant{
+
+.content_restaurant {
     width: calc(100% - 300px);
     display: flex;
     flex-direction: column;
 }
 
-.food_content_section{
+.food_content_section {
     height: 180px;
     border: solid;
     border-color: #f0eeeb;
     position: relative;
 }
 
-.food_content_section:hover{
+.food_content_section:hover {
     background-color: #FF930F78;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ff8000; 
-  border-radius: 4px;
+    background: #ff8000;
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: orange; 
+    background: orange;
 }
 
-.content_restaurant_category{
+.content_restaurant_category {
     padding: 16px;
 }
 
-.pd_left_8{
+.pd_left_8 {
     padding-left: 8px;
 }
 
-.content{
+.content {
     height: 100vh;
+}
+
+@media (max-width:770px) {
+    .content_restaurant {
+        width: 100%;
+    }
+
+    .content_total {
+        flex-direction: column;
+    }
 }
