@@ -7,7 +7,7 @@ function getNotesHTML(dishIndex) {
 
                 <div class="img">
                     <img class="content_restaurant_category_img" src="./assets/pictures/pizza-5275191_1280.jpg"
-                        alt="${food.dishes.pizza}">
+                        alt="">
                 </div>
 
                 <h2 id="PIZZA">Pizza</h2>
