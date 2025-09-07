@@ -16,12 +16,12 @@ function getNotesHTML(dishIndex) {
                     <div>
 
                         <div>
-                            <h3 class="food_head">name</h3>
+                            <h3 class="food_head">${dishes[0].name}</h3>
                         </div>
 
-                        <div>description</div>
+                        <div>${dishes[0].description}</div>
 
-                        <div class="price_section">price</div>
+                        <div class="price_section">${dishes[0].price}€</div>
 
                     </div>
 
@@ -30,7 +30,90 @@ function getNotesHTML(dishIndex) {
                 </div>
 
 
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[1].name}</h3>
+                        </div>
+
+                        <div>${dishes[1].description}</div>
+
+                        <div class="price_section">${dishes[1].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[2].name}</h3>
+                        </div>
+
+                        <div>${dishes[2].description}</div>
+
+                        <div class="price_section">${dishes[2].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[3].name}</h3>
+                        </div>
+
+                        <div>${dishes[3].description}</div>
+
+                        <div class="price_section">${dishes[3].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[4].name}</h3>
+                        </div>
+
+                        <div>${dishes[4].description}</div>
+
+                        <div class="price_section">${dishes[4].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+
             </div>
+
+
+
+
+
+
+
+
+
 
 
             <div class="content_restaurant_category">
@@ -42,19 +125,117 @@ function getNotesHTML(dishIndex) {
 
                 <h2 id="PASTA">Pasta</h2>
 
-                <div class="food_content_section pd_left_8">
+                                <div class="food_content_section">
                     <div>
 
                         <div>
-                            <h3 class="food_head">name</h3>
+                            <h3 class="food_head">${dishes[5].name}</h3>
                         </div>
 
-                        <div>description</div>
+                        <div>${dishes[5].description}</div>
 
-                        <div class="price_section">price</div>
+                        <div class="price_section">${dishes[5].price}€</div>
 
                     </div>
+
+                    <span class="plus_icon"></span>
+
                 </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[6].name}</h3>
+                        </div>
+
+                        <div>${dishes[6].description}</div>
+
+                        <div class="price_section">${dishes[6].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[7].name}</h3>
+                        </div>
+
+                        <div>${dishes[7].description}</div>
+
+                        <div class="price_section">${dishes[7].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[8].name}</h3>
+                        </div>
+
+                        <div>${dishes[8].description}</div>
+
+                        <div class="price_section">${dishes[8].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[9].name}</h3>
+                        </div>
+
+                        <div>${dishes[9].description}</div>
+
+                        <div class="price_section">${dishes[9].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[10].name}</h3>
+                        </div>
+
+                        <div>${dishes[10].description}</div>
+
+                        <div class="price_section">${dishes[10].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+            </div>
 
 
             </div>
@@ -67,18 +248,95 @@ function getNotesHTML(dishIndex) {
 
                 <h2 id="STEAK">Steak</h2>
 
-                <div class="food_content_section pd_left_8">
+                
+                                <div class="food_content_section">
                     <div>
 
                         <div>
-                            <h3 class="food_head">name</h3>
+                            <h3 class="food_head">${dishes[11].name}</h3>
                         </div>
 
-                        <div>description</div>
+                        <div>${dishes[11].description}</div>
 
-                        <div class="price_section">price</div>
+                        <div class="price_section">${dishes[11].price}€</div>
 
                     </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[12].name}</h3>
+                        </div>
+
+                        <div>${dishes[12].description}</div>
+
+                        <div class="price_section">${dishes[12].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[13].name}</h3>
+                        </div>
+
+                        <div>${dishes[13].description}</div>
+
+                        <div class="price_section">${dishes[13].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[14].name}</h3>
+                        </div>
+
+                        <div>${dishes[14].description}</div>
+
+                        <div class="price_section">${dishes[14].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[10].name}</h3>
+                        </div>
+
+                        <div>${dishes[10].description}</div>
+
+                        <div class="price_section">${dishes[10].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
                 </div>
 
 
@@ -93,19 +351,97 @@ function getNotesHTML(dishIndex) {
 
                 <h2 id="VORSPEISE">Vorspeise</h2>
 
-                <div class="food_content_section pd_left_8">
+                        
+                                <div class="food_content_section">
                     <div>
 
                         <div>
-                            <h3 class="food_head">name</h3>
+                            <h3 class="food_head">${dishes[15].name}</h3>
                         </div>
 
-                        <div>description</div>
+                        <div>${dishes[15].description}</div>
 
-                        <div class="price_section">price</div>
+                        <div class="price_section">${dishes[15].price}€</div>
 
                     </div>
+
+                    <span class="plus_icon"></span>
+
                 </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[16].name}</h3>
+                        </div>
+
+                        <div>${dishes[16].description}</div>
+
+                        <div class="price_section">${dishes[16].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[17].name}</h3>
+                        </div>
+
+                        <div>${dishes[17].description}</div>
+
+                        <div class="price_section">${dishes[17].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[18].name}</h3>
+                        </div>
+
+                        <div>${dishes[18].description}</div>
+
+                        <div class="price_section">${dishes[18].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[19].name}</h3>
+                        </div>
+
+                        <div>${dishes[19].description}</div>
+
+                        <div class="price_section">${dishes[19].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
 
 
             </div>
@@ -119,18 +455,95 @@ function getNotesHTML(dishIndex) {
 
                 <h2 id="NACHSPEISE">Nachspeise</h2>
 
-                <div class="food_content_section pd_left_8">
+                         
+                                <div class="food_content_section">
                     <div>
 
                         <div>
-                            <h3 class="food_head">name</h3>
+                            <h3 class="food_head">${dishes[20].name}</h3>
                         </div>
 
-                        <div>description</div>
+                        <div>${dishes[20].description}</div>
 
-                        <div class="price_section">price</div>
+                        <div class="price_section">${dishes[20].price}€</div>
 
                     </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[21].name}</h3>
+                        </div>
+
+                        <div>${dishes[21].description}</div>
+
+                        <div class="price_section">${dishes[21].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[22].name}</h3>
+                        </div>
+
+                        <div>${dishes[22].description}</div>
+
+                        <div class="price_section">${dishes[22].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[23].name}</h3>
+                        </div>
+
+                        <div>${dishes[23].description}</div>
+
+                        <div class="price_section">${dishes[23].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
+                </div>
+
+
+                <div class="food_content_section">
+                    <div>
+
+                        <div>
+                            <h3 class="food_head">${dishes[24].name}</h3>
+                        </div>
+
+                        <div>${dishes[24].description}</div>
+
+                        <div class="price_section">${dishes[24].price}€</div>
+
+                    </div>
+
+                    <span class="plus_icon"></span>
+
                 </div>
 
 
