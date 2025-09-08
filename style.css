@@ -64,9 +64,6 @@
     background: orange;
 }
 
-.content_restaurant_category {
-    padding: 16px;
-}
 
 .pd_left_8 {
     padding-left: 8px;
@@ -80,4 +77,18 @@
     .content_total {
         flex-direction: column;
     }
+}
+
+.hinzufügen {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.hinzufügen:hover {
+    background: #0056b3;
 }
