@@ -48,3 +48,10 @@
     transform: scale(1.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+.delikato_logo {
+    max-height: 130px;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+}
