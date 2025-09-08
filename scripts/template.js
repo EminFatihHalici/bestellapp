@@ -21,7 +21,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[0].description}</div>
 
-                        <div class="price_section">${dishes[0].price}€</div>
+                        <div class="price_section">${dishes[0].price}0€</div>
 
                     </div>
 
@@ -39,7 +39,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[1].description}</div>
 
-                        <div class="price_section">${dishes[1].price}€</div>
+                        <div class="price_section">${dishes[1].price}0€</div>
 
                     </div>
 
@@ -57,7 +57,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[2].description}</div>
 
-                        <div class="price_section">${dishes[2].price}€</div>
+                        <div class="price_section">${dishes[2].price}0€</div>
 
                     </div>
 
@@ -76,7 +76,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[3].description}</div>
 
-                        <div class="price_section">${dishes[3].price}€</div>
+                        <div class="price_section">${dishes[3].price}0€</div>
 
                     </div>
 
@@ -94,7 +94,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[4].description}</div>
 
-                        <div class="price_section">${dishes[4].price}€</div>
+                        <div class="price_section">${dishes[4].price}0€</div>
 
                     </div>
 
@@ -134,7 +134,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[5].description}</div>
 
-                        <div class="price_section">${dishes[5].price}€</div>
+                        <div class="price_section">${dishes[5].price}0€</div>
 
                     </div>
 
@@ -152,7 +152,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[6].description}</div>
 
-                        <div class="price_section">${dishes[6].price}€</div>
+                        <div class="price_section">${dishes[6].price}0€</div>
 
                     </div>
 
@@ -170,7 +170,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[7].description}</div>
 
-                        <div class="price_section">${dishes[7].price}€</div>
+                        <div class="price_section">${dishes[7].price}0€</div>
 
                     </div>
 
@@ -189,7 +189,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[8].description}</div>
 
-                        <div class="price_section">${dishes[8].price}€</div>
+                        <div class="price_section">${dishes[8].price}0€</div>
 
                     </div>
 
@@ -207,7 +207,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[9].description}</div>
 
-                        <div class="price_section">${dishes[9].price}€</div>
+                        <div class="price_section">${dishes[9].price}0€</div>
 
                     </div>
 
@@ -226,7 +226,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[10].description}</div>
 
-                        <div class="price_section">${dishes[10].price}€</div>
+                        <div class="price_section">${dishes[10].price}0€</div>
 
                     </div>
 
@@ -258,7 +258,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[11].description}</div>
 
-                        <div class="price_section">${dishes[11].price}€</div>
+                        <div class="price_section">${dishes[11].price}0€</div>
 
                     </div>
 
@@ -294,7 +294,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[13].description}</div>
 
-                        <div class="price_section">${dishes[13].price}€</div>
+                        <div class="price_section">${dishes[13].price}0€</div>
 
                     </div>
 
@@ -313,7 +313,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[14].description}</div>
 
-                        <div class="price_section">${dishes[14].price}€</div>
+                        <div class="price_section">${dishes[14].price}0€</div>
 
                     </div>
 
@@ -331,7 +331,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[10].description}</div>
 
-                        <div class="price_section">${dishes[10].price}€</div>
+                        <div class="price_section">${dishes[10].price}0€</div>
 
                     </div>
 
@@ -361,7 +361,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[15].description}</div>
 
-                        <div class="price_section">${dishes[15].price}€</div>
+                        <div class="price_section">${dishes[15].price}0€</div>
 
                     </div>
 
@@ -397,7 +397,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[17].description}</div>
 
-                        <div class="price_section">${dishes[17].price}€</div>
+                        <div class="price_section">${dishes[17].price}0€</div>
 
                     </div>
 
@@ -416,7 +416,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[18].description}</div>
 
-                        <div class="price_section">${dishes[18].price}€</div>
+                        <div class="price_section">${dishes[18].price}0€</div>
 
                     </div>
 
@@ -434,7 +434,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[19].description}</div>
 
-                        <div class="price_section">${dishes[19].price}€</div>
+                        <div class="price_section">${dishes[19].price}0€</div>
 
                     </div>
 
@@ -483,7 +483,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[21].description}</div>
 
-                        <div class="price_section">${dishes[21].price}€</div>
+                        <div class="price_section">${dishes[21].price}0€</div>
 
                     </div>
 
@@ -501,7 +501,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[22].description}</div>
 
-                        <div class="price_section">${dishes[22].price}€</div>
+                        <div class="price_section">${dishes[22].price}0€</div>
 
                     </div>
 
@@ -538,7 +538,7 @@ function getNotesHTML(dishIndex) {
 
                         <div>${dishes[24].description}</div>
 
-                        <div class="price_section">${dishes[24].price}€</div>
+                        <div class="price_section">${dishes[24].price}0€</div>
 
                     </div>
 
