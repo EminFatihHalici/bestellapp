@@ -92,3 +92,8 @@
 .hinzufügen:hover {
     background: #0056b3;
 }
+
+.dish{
+    display: flex;
+    justify-content: space-between;
+}
