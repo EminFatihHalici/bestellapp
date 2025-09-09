@@ -12,7 +12,7 @@ function renderContent() {
     categories.forEach(category => {
         let categoryId = `category-${category.toLowerCase()}`;
 
-        html += `<h2 id="${categoryId}" class="category-title">${category.toUpperCase()}</h2>`;
+        html += `<h2 id="${categoryId}" class="category_title">${category.toUpperCase()}</h2>`;
 
         let filteredDishes = dishes.filter(d => d.category === category);
         filteredDishes.forEach(dish => {
