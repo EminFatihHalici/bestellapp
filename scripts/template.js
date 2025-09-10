@@ -17,3 +17,12 @@ function getNotesHTML(dish) {
 
     `;
 }
+
+function getBasket() {
+    return `
+    
+        <h3>Fülle deinen Warenkorb</h3>
+        Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.
+    
+    `
+}
