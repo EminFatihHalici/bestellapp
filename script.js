@@ -1,5 +1,6 @@
 function init() {
     renderContent();
+    basketContent();
 }
 
 function renderContent() {
@@ -21,4 +22,10 @@ function renderContent() {
     });
 
     contentDish.innerHTML = html;
+}
+
+
+function basketContent() {
+    let basketRef = document.getElementById("basket_food_content");
+    basketRef.innerHTML = getBasket();
 }
