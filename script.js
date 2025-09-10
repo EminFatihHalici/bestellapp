@@ -29,3 +29,8 @@ function basketContent() {
     let basketRef = document.getElementById("basket_food_content");
     basketRef.innerHTML = getBasket();
 }
+
+function respBasketContent() {
+    let respBasketRef = document.getElementById("respBasket");
+    respBasketRef.innerHTML = getRespBasket();
+}

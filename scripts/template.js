@@ -26,3 +26,11 @@ function getBasket() {
     
     `
 }
+
+function getRespBasket() {
+    return `
+    
+        
+    
+    `
+}
