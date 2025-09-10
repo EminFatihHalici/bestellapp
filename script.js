@@ -34,3 +34,9 @@ function respBasketContent() {
     let respBasketRef = document.getElementById("respBasket");
     respBasketRef.innerHTML = getRespBasket();
 }
+
+function toggleOff() {
+    let overlayRef = document.getElementById("resp_toggle_off")
+
+    overlayRef.classList.toggle("d_none")
+}
