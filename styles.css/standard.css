@@ -4,3 +4,7 @@ body {
     font-family: "Ubuntu";
     min-height: 100vh;
 }
+
+.d_none{
+    display: none;
+}
