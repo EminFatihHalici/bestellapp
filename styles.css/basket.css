@@ -112,9 +112,8 @@ aside {
     aside {
         display: none;
     }
-}
 
-.basket_responsive {
+    .resp_overlay {
     position: fixed;
     overflow-y: scroll;
     bottom: 0;
@@ -122,3 +121,6 @@ aside {
     height: 100vh;
     background-color: hsla(0, 0%, 100%, 0.964);
 }
+
+}
+

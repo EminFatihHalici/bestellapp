@@ -29,7 +29,7 @@ function getBasket() {
 
 function getRespBasket() {
     return `
-    
+     <div class="resp_overlay">
         <div class="basket_stickyrail">
 
                 <div class="basket">
@@ -67,6 +67,6 @@ function getRespBasket() {
                 </div>
 
             </div>
-    
+        </div>
     `
 }
