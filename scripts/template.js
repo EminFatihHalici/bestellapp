@@ -29,44 +29,47 @@ function getBasket() {
 
 function getRespBasket() {
     return `
-     <div class="resp_overlay" id="resp_toggle_off">
-        <div class="basket_stickyrail">
 
-                <div class="basket">
-                    <h2 class="basket_head">Warenkorb</h2>
+        <div class="resp_overlay" id="resp_toggle_off" onclick="toggleOff()">
+            <div class="basket_stickyrail" >
+
+                    <div class="basket">
+                        <h2 class="basket_head">Warenkorb</h2>
+                    </div>
+
+                    <div class="basket_food_content" id="basket_food_content"></div>
+
+                    <table class="basket_order"
+                        <tr>
+                            <td class="basket_minus_icon"></td>
+                            <td>StückX</td>
+                            <td class="basket_plus_icon"></td>
+                            <td class="p_right p_left">Preis€</td>
+                            <td><img class="delete_bin" src="./assets/pictures/trash-can-10412.svg" alt="Löschen"></td>
+                        </tr>
+
+                    </table>
+
+
+
+                    <div class="total">
+                        <div class="p_top">Zwischensumme</div>
+                        <div class="p_top">Preis€</div>
+                    </div>
+
+                    <div class="total">
+                        <div class="p_top">Lieferkosten</div>
+                        <div class="p_top">Preis€</div>
+                    </div>
+
+                    <div class="total">
+                        <div class="p_top total_sum">Gesamt</div>
+                        <div class="p_top total_sum">Preis€</div>
+                    </div>
+
                 </div>
-
-                <div class="basket_food_content" id="basket_food_content"></div>
-
-                <table class="basket_order">
-                    <tr>
-                        <td class="basket_minus_icon"></td>
-                        <td>StückX</td>
-                        <td class="basket_plus_icon"></td>
-                        <td class="p_right p_left">Preis€</td>
-                        <td><img class="delete_bin" src="./assets/pictures/trash-can-10412.svg" alt="Löschen"></td>
-                    </tr>
-
-                </table>
-
-
-
-                <div class="total">
-                    <div class="p_top">Zwischensumme</div>
-                    <div class="p_top">Preis€</div>
-                </div>
-
-                <div class="total">
-                    <div class="p_top">Lieferkosten</div>
-                    <div class="p_top">Preis€</div>
-                </div>
-
-                <div class="total">
-                    <div class="p_top total_sum">Gesamt</div>
-                    <div class="p_top total_sum">Preis€</div>
-                </div>
-
             </div>
-        </div>
-    `
+
+        `
+
 }
