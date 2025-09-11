@@ -52,5 +52,3 @@ function pushToBasket() {
 
     basket.push(oneDish);
 }
-
-console.log(pushToBasket);
