@@ -1,3 +1,5 @@
+let basket = [];
+
 function init() {
     renderContent();
     basketContent();
@@ -40,3 +42,15 @@ function toggleOff() {
 
     overlayRef.classList.toggle("d_none")
 }
+
+function pushToBasket() {
+    let oneDish = {
+        name: dishes[dish].name,
+        price: dishes[dish].price,
+        amount: 1, 
+    }
+
+    basket.push(oneDish);
+}
+
+console.log(pushToBasket);
