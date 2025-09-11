@@ -40,3 +40,8 @@ function toggleOff() {
 
     overlayRef.classList.toggle("d_none")
 }
+
+function myFunction() {
+  let element = document.getElementById("resp_toggle_off");
+  element.classList.add("d_none");
+}

@@ -29,7 +29,7 @@ function getBasket() {
 
 function getRespBasket() {
     return `
-     <div class="resp_overlay">
+     <div class="resp_overlay" id="resp_toggle_off">
         <div class="basket_stickyrail">
 
                 <div class="basket">
