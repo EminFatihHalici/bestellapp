@@ -2,10 +2,19 @@ let basket = [];
 let cart = [];
 
 function init() {
-    getDishIndex()
+    getDishIndex();
+    basketContent();
 }
 
+function getDishIndex() {
+    let dishContentRef = document.getElementById('content_div')
+    dishContentRef.innerHTML = "";
 
+    for (let index = 0; index < dishes.length; index++) {
+        dishContentRef.innerHTML += getNotesHTML(index);
+    }
+
+}
 
 function basketContent() {
     let basketRef = document.getElementById("basket_food_content");
@@ -21,15 +30,4 @@ function toggleOff() {
     let overlayRef = document.getElementById("resp_toggle_off")
 
     overlayRef.classList.toggle("d_none")
-}
-
-
-function getDishIndex() {
-    let dishContentRef = document.getElementById('content_div')
-    dishContentRef.innerHTML = "";
-
-    for (let index = 0; index < dishes.length; index++) {
-        dishContentRef.innerHTML += getNotesHTML(index);
-    }
-
 }
