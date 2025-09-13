@@ -1,16 +1,16 @@
-function getNotesHTML(dish) {
+function getNotesHTML(index) {
     return `
         <div class="dish">
                 <div class="dish_info_text">
 
-                    <h3 class="dish-name">${dish.name}</h3>
-                    <p class="dish-description">${dish.description}</p>
-                    <p class="dish-price"><strong>${dish.price.toFixed(2)} €</strong></p>
+                    <h3 class="dish-name">${dishes[index].name}</h3>
+                    <p class="dish-description">${dishes[index].description}</p>
+                    <p class="dish-price"><strong>${dishes[index].price.toFixed(2)} €</strong></p>
 
                 </div>
 
              <div class="button">
-                <button class="hinzufügen">+</button>
+                <button class="hinzufügen" addToCart(${index}>+</button>
              </div>   
 
         </div>
@@ -18,10 +18,13 @@ function getNotesHTML(dish) {
     `;
 }
 
-function getBasket() {
+function getBasket(index) {
+
+    let dish = dishes[index];
+
     return `
     
-        <h3>Fülle deinen Warenkorb</h3>
+        <h3>Fülle deinen Warenkorb ${dish.description}</h3>
         Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.
     
     `
@@ -73,3 +76,4 @@ function getRespBasket() {
         `
 
 }
+

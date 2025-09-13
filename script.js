@@ -1,30 +1,10 @@
 let basket = [];
+let cart = [];
 
 function init() {
-    renderContent();
-    basketContent();
+    getDishIndex()
 }
 
-function renderContent() {
-    let contentDish = document.getElementById('content_div');
-    contentDish.innerHTML = "";
-
-    let categories = [...new Set(dishes.map(d => d.category))];
-    let html = "";
-
-    categories.forEach(category => {
-        let categoryId = `category-${category.toLowerCase()}`;
-
-        html += `<h2 id="${categoryId}" class="category_title">${category.toUpperCase()}</h2>`;
-
-        let filteredDishes = dishes.filter(d => d.category === category);
-        filteredDishes.forEach(dish => {
-            html += getNotesHTML(dish);
-        });
-    });
-
-    contentDish.innerHTML = html;
-}
 
 
 function basketContent() {
@@ -41,4 +21,15 @@ function toggleOff() {
     let overlayRef = document.getElementById("resp_toggle_off")
 
     overlayRef.classList.toggle("d_none")
+}
+
+
+function getDishIndex() {
+    let dishContentRef = document.getElementById('content_div')
+    dishContentRef.innerHTML = "";
+
+    for (let index = 0; index < dishes.length; index++) {
+        dishContentRef.innerHTML += getNotesHTML(index);
+    }
+
 }
