@@ -1,16 +1,16 @@
-function getNotesHTML(index) {
+function getNotesHTML(indexDishes) {
     return `
         <div class="dish">
                 <div class="dish_info_text">
 
-                    <h3 class="dish-name">${dishes[index].name}</h3>
-                    <p class="dish-description">${dishes[index].description}</p>
-                    <p class="dish-price"><strong>${dishes[index].price.toFixed(2)} €</strong></p>
+                    <h3 class="dish-name">${dishes[indexDishes].name}</h3>
+                    <p class="dish-description">${dishes[indexDishes].description}</p>
+                    <p class="dish-price"><strong>${dishes[indexDishes].price.toFixed(2)} €</strong></p>
 
                 </div>
 
              <div class="button">
-                <button class="hinzufügen" addToCart(${index}>+</button>
+                <button class="hinzufügen" addToCart(${indexDishes}>+</button>
              </div>   
 
         </div>
@@ -18,61 +18,61 @@ function getNotesHTML(index) {
     `;
 }
 
-function getBasket(index) {
+// //function getBasket(index) {
 
 
-    return `
+//     //return `
     
-        <h3>Fülle deinen Warenkorb ${dishes[index].description}</h3>
-        Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.
+//         //<h3>Fülle deinen Warenkorb ${dishes[index].description}</h3>
+//         //Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.
     
-    `
-}
+//     //`
+// //}
 
-function getRespBasket() {
-    return `
+// *//function getRespBasket() {
+//     return `
 
-        <div class="resp_overlay" id="resp_toggle_off" onclick="toggleOff()">
-            <div class="basket_stickyrail" >
+//         <div class="resp_overlay" id="resp_toggle_off" onclick="toggleOff()">
+//             <div class="basket_stickyrail" >
 
-                    <div class="basket">
-                        <h2 class="basket_head">Warenkorb</h2>
-                    </div>
+//                     <div class="basket">
+//                         <h2 class="basket_head">Warenkorb</h2>
+//                     </div>
 
-                    <div class="basket_food_content" id="basket_food_content"></div>
+//                     <div class="basket_food_content" id="basket_food_content"></div>
 
-                    <table class="basket_order"
-                        <tr>
-                            <td class="basket_minus_icon"></td>
-                            <td>StückX</td>
-                            <td class="basket_plus_icon"></td>
-                            <td class="p_right p_left">Preis€</td>
-                            <td><img class="delete_bin" src="./assets/pictures/trash-can-10412.svg" alt="Löschen"></td>
-                        </tr>
+//                     <table class="basket_order"
+//                         <tr>
+//                             <td class="basket_minus_icon"></td>
+//                             <td>StückX</td>
+//                             <td class="basket_plus_icon"></td>
+//                             <td class="p_right p_left">Preis€</td>
+//                             <td><img class="delete_bin" src="./assets/pictures/trash-can-10412.svg" alt="Löschen"></td>
+//                         </tr>
 
-                    </table>
+//                     </table>
 
 
 
-                    <div class="total">
-                        <div class="p_top">Zwischensumme</div>
-                        <div class="p_top">Preis€</div>
-                    </div>
+//                     <div class="total">
+//                         <div class="p_top">Zwischensumme</div>
+//                         <div class="p_top">Preis€</div>
+//                     </div>
 
-                    <div class="total">
-                        <div class="p_top">Lieferkosten</div>
-                        <div class="p_top">Preis€</div>
-                    </div>
+//                     <div class="total">
+//                         <div class="p_top">Lieferkosten</div>
+//                         <div class="p_top">Preis€</div>
+//                     </div>
 
-                    <div class="total">
-                        <div class="p_top total_sum">Gesamt</div>
-                        <div class="p_top total_sum">Preis€</div>
-                    </div>
+//                     <div class="total">
+//                         <div class="p_top total_sum">Gesamt</div>
+//                         <div class="p_top total_sum">Preis€</div>
+//                     </div>
 
-                </div>
-            </div>
+//                 </div>
+//             </div>
 
-        `
+//         `
 
-}
+// //}*//
 
