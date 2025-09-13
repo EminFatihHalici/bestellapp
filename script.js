@@ -3,7 +3,7 @@ let cart = [];
 
 function init() {
     getDishIndex();
-    basketContent();
+    // basketContent();
 }
 
 function getDishIndex() {
