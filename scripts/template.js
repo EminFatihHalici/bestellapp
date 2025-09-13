@@ -20,11 +20,10 @@ function getNotesHTML(index) {
 
 function getBasket(index) {
 
-    let dish = dishes[index];
 
     return `
     
-        <h3>Fülle deinen Warenkorb ${dish.description}</h3>
+        <h3>Fülle deinen Warenkorb ${dishes[index].description}</h3>
         Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.
     
     `
