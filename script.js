@@ -16,15 +16,13 @@ function getDishIndex() {
 
 }
 
-function renderBasket(renderBasketId) {
-    let basketRef = document.getElementById(renderBasketId);
+function renderBasket() {
+    let basketRef = document.getElementById('basket_food_content');
     basketRef.innerHTML = "";
 
+    
     for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
-        let DishPrice = basket[indexBasket].price 
-                .toFixed(2)
-                .concat("€");
-        basketRef.innerHTML += getBasketTemplate(indexBasket, DishPrice);
+     basketRef.innerHTML += getBasketTemplate(indexBasket);
     }
 }
 
@@ -46,7 +44,7 @@ function addOrderToBasket(indexDishes) {
             increaseAmount(dishName);
             break;
     }
-    renderBasket('basket_food_content');
+    renderBasket();
 }
 
 
@@ -61,37 +59,37 @@ function pushToBasket(indexDishes) {
 }
 
 
-function increaseAmount(dishName) {
-    let dishInBasketIndex = basket.findIndex((dish) => {
-        return dish.name === dishName;
-    });
+// function increaseAmount(dishName) {
+//     let dishInBasketIndex = basket.findIndex((dish) => {
+//         return dish.name === dishName;
+//     });
 
-    basket[dishInBasketIndex].amount++
+//     basket[dishInBasketIndex].amount++
 
-    renderBasket('basket_food_content')
-}
+//     renderBasket()
+// }
 
-function addOneOrder(indexBasket) {
-    basket[indexBasket].amount++;
+// function addOneOrder(indexBasket) {
+//     basket[indexBasket].amount++;
 
-    renderBasket(basket_food_content);
-}
+//     renderBasket();
+// }
 
-function deleteOneOrder(indexBasket) {
-    if (basket[indexBasket].amount === 1) {
-        basket.splice(indexBasket, 1);
-    } else {
-        basket[indexBasket].amount--;
-    }
+// function deleteOneOrder(indexBasket) {
+//     if (basket[indexBasket].amount === 1) {
+//         basket.splice(indexBasket, 1);
+//     } else {
+//         basket[indexBasket].amount--;
+//     }
 
-    renderBasket('basket_food_content');
-}
+//     renderBasket();
+// }
 
-function deleteWholeOrder(indexBasket) {
-    basket.splice(indexBasket, 1);
+// function deleteWholeOrder(indexBasket) {
+//     basket.splice(indexBasket, 1);
 
-    renderBasket(basket_food_content);
-}
+//     renderBasket();
+// }
 
 
 
