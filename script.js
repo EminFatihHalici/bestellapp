@@ -77,6 +77,21 @@ function addOneOrder(indexBasket) {
     renderBasket(basket_food_content);
 }
 
+function deleteOneOrder(indexBasket) {
+    if (basket[indexBasket].amount === 1) {
+        basket.splice(indexBasket, 1);
+    } else {
+        basket[indexBasket].amount--;
+    }
+
+    renderBasket('basket_food_content');
+}
+
+function deleteWholeOrder(indexBasket) {
+    basket.splice(indexBasket, 1);
+
+    renderBasket(basket_food_content);
+}
 
 
 
