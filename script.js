@@ -6,7 +6,7 @@ function init() {
     // basketContent();
 }
 
-function getDishIndex() {
+function getDishIndex() {  
     let dishContentRef = document.getElementById('content_div')
     dishContentRef.innerHTML = "";
 
@@ -14,6 +14,16 @@ function getDishIndex() {
         dishContentRef.innerHTML += getNotesHTML(indexDishes);
     }
 
+}
+
+function renderBasket(renderBasketId) {
+    let basketRef = document.getElementById(renderBasketId);
+    basketRef.innerHTML= "";
+
+    for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
+       basketRef.innerHTML +=  getBasketTemplate(indexBasket);
+        
+    }
 }
 
 // //function basketContent() {
