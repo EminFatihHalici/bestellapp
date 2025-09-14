@@ -61,6 +61,18 @@ function pushToBasket(indexDishes) {
 }
 
 
+function increaseAmount(dishName) {
+    let dishInBasketIndex = basket.findIndex((dish) => {
+        return dish.name === dishName;
+    });
+
+    basket[dishInBasketIndex].amount++
+
+    renderBasket('basket_food_content')
+}
+
+
+
 
 
 
