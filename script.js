@@ -21,10 +21,49 @@ function renderBasket(renderBasketId) {
     basketRef.innerHTML = "";
 
     for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
-        basketRef.innerHTML += getBasketTemplate(indexBasket);
-
+        let DishPrice = basket[indexBasket].price 
+                .toFixed(2)
+                .concat("€");
+        basketRef.innerHTML += getBasketTemplate(indexBasket, DishPrice);
     }
 }
+
+
+function addOrderToBasket(indexDishes) {
+    let dishName = dishes[indexDishes].name;
+
+    switch (
+        basket.findIndex((dish) => {
+            return dish.name === dishName;
+        })
+
+    ) {
+        case -1:
+            pushToBasket(indexDishes);
+            break;
+    
+        default:
+            increaseAmount(dishName);
+            break;
+    }
+    renderBasket('basket_food_content');
+}
+
+
+function pushToBasket(indexDishes) {
+    let oneDish = {
+        name: dishes[indexDishes].name,
+        price: dishes[indexDishes].price,
+        amount: 1,
+    };
+
+    basket.push(oneDish);
+}
+
+
+
+
+
 
 // //function basketContent() {
 //     let basketRef = document.getElementById("basket_food_content");
