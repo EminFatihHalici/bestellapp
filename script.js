@@ -71,6 +71,12 @@ function increaseAmount(dishName) {
     renderBasket('basket_food_content')
 }
 
+function addOneOrder(indexBasket) {
+    basket[indexBasket].amount++;
+
+    renderBasket(basket_food_content);
+}
+
 
 
 
