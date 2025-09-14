@@ -6,7 +6,7 @@ function init() {
     // basketContent();
 }
 
-function getDishIndex() {  
+function getDishIndex() {
     let dishContentRef = document.getElementById('content_div')
     dishContentRef.innerHTML = "";
 
@@ -18,11 +18,11 @@ function getDishIndex() {
 
 function renderBasket(renderBasketId) {
     let basketRef = document.getElementById(renderBasketId);
-    basketRef.innerHTML= "";
+    basketRef.innerHTML = "";
 
     for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
-       basketRef.innerHTML +=  getBasketTemplate(indexBasket);
-        
+        basketRef.innerHTML += getBasketTemplate(indexBasket);
+
     }
 }
 
