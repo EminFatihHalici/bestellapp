@@ -39,7 +39,7 @@ function getBasketTemplate(indexBasket) {
                                              <td>${item.amount}</td>
                                              <td class="basket_plus_icon backgr_hover" onclick="addOneOrder(${indexBasket})"></td>
                                              <td class="p_right p_left">${item.price.toFixed(2)}€</td>
-                                             <td><img class="delete_bin" src="./assets/pictures/trash-can-10412.svg" alt="Löschen"></td>
+                                             <td><img class="delete_bin backgr_hover"  onclick="deleteWholeOrder(${indexBasket})" src="./assets/pictures/trash-can-10412.svg" alt="Löschen"></td>
                                          </tr>
 
             </table>
