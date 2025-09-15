@@ -88,13 +88,14 @@
     color: white;
     cursor: pointer;
     transition: 0.2s;
+    font-size: 16px;
 }
 
 .hinzufügen:hover {
     background: #0056b3;
 }
 
-.dish{
+.dish {
     display: flex;
     justify-content: space-between;
     padding-left: 32px;
@@ -103,10 +104,6 @@
     margin-top: 8px;
 }
 
-.hinzufügen{
-    font-size: 16px;
-}
-
-.category_title{
+.category_title {
     padding-left: 16px;
 }

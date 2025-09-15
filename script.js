@@ -3,7 +3,6 @@ let cart = [];
 
 function init() {
     getDishIndex();
-    // basketContent();
 }
 
 function getDishIndex() {
@@ -46,6 +45,7 @@ function addOrderToBasket(indexDishes) {
     }
     renderBasket('basket_food_content');
     renderBasket('respBasket');
+    calcSubTotalPrice('sub_total_price');
 }
 
 
@@ -111,16 +111,12 @@ function calcDishesPrice(indexBasket) {
 function calcSubTotalPrice(SubId) {
     let subTotalPriceRef = document.getElementById(SubId);
     let currentOrderPrice = 0;
-    subTotalPriceRef.innerHTML = "";
 
     for (let indexCosts = 0; indexCosts < basket.length; indexCosts++) {
         currentOrderPrice += basket[indexCosts].price * basket[indexCosts].amount;
-        let subTotalPrice = currentOrderPrice
-
-        subTotalPriceRef.innerHTML = `subtotal : ${subTotalPrice}`;
-
     }
-
+        let subTotalPrice = currentOrderPrice.toFixed(2) + "€";
+        subTotalPriceRef.innerHTML = `${subTotalPrice}`;
 }
 
 // function calcSubTotalPrice(sub_total_price) {
