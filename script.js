@@ -85,29 +85,8 @@ function deleteOneOrder(indexBasket) {
     renderBasket();
 }
 
-// function deleteWholeOrder(indexBasket) {
-//     basket.splice(indexBasket, 1);
+function deleteWholeOrder(indexBasket) {
+    basket.splice(indexBasket, 1);
 
-//     renderBasket();
-// }
-
-
-
-
-
-
-// //function basketContent() {
-//     let basketRef = document.getElementById("basket_food_content");
-//     basketRef.innerHTML = getBasket();
-// //}
-
-// //function respBasketContent() {
-//     let respBasketRef = document.getElementById("respBasket");
-//     respBasketRef.innerHTML = getRespBasket();
-// //}
-
-// function toggleOff() {
-//     let overlayRef = document.getElementById("resp_toggle_off")
-
-//     overlayRef.classList.toggle("d_none")
-// }
+    renderBasket();
+}
