@@ -69,11 +69,11 @@ function increaseAmount(dishName) {
     renderBasket()
 }
 
-// function addOneOrder(indexBasket) {
-//     basket[indexBasket].amount++;
+function addOneOrder(indexBasket) {
+    basket[indexBasket].amount++;
 
-//     renderBasket();
-// }
+    renderBasket();
+}
 
 // function deleteOneOrder(indexBasket) {
 //     if (basket[indexBasket].amount === 1) {
