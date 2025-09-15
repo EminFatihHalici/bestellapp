@@ -52,16 +52,6 @@ function getBasketTemplate(indexBasket, i) {
 }
 
 
-//function getBasket(index) {
-
-
-    //return `
-    
-        //<h3>Fülle deinen Warenkorb ${dishes[index].description}</h3>
-        //Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.
-    
-    //`
-//}
 
 //function getRespBasket() {
     // return `
