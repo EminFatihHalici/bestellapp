@@ -20,9 +20,9 @@ function renderBasket() {
     let basketRef = document.getElementById('basket_food_content');
     basketRef.innerHTML = "";
 
-    
+
     for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
-     basketRef.innerHTML += getBasketTemplate(indexBasket);
+        basketRef.innerHTML += getBasketTemplate(indexBasket);
     }
 }
 
@@ -31,15 +31,15 @@ function addOrderToBasket(indexDishes) {
     let dishName = dishes[indexDishes].name;
 
     switch (
-        basket.findIndex((dish) => {
-            return dish.name === dishName;
-        })
+    basket.findIndex((dish) => {
+        return dish.name === dishName;
+    })
 
     ) {
         case -1:
             pushToBasket(indexDishes);
             break;
-    
+
         default:
             increaseAmount(dishName);
             break;
@@ -90,3 +90,15 @@ function deleteWholeOrder(indexBasket) {
 
     renderBasket();
 }
+
+function calcDishesPrice(indexBasket) {
+    let calcDishesPriceRef = document.getElementById(`order_price_${indexBasket}`);
+
+    calcDishesPriceRef.innerHTML = "";
+
+    let dishPrice = basket[indexBasket].amount * basket[indexBasket].price;
+
+    calcDishesPriceRef.innerHTML = dishPrice.toFixed(2) + "€";
+}
+
+
