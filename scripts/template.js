@@ -35,7 +35,7 @@ function getBasketTemplate(indexBasket) {
 
             <table class="basket_order"
                                          <tr>
-                                             <td class="basket_minus_icon"></td>
+                                             <td class="basket_minus_icon backgr_hover" onclick="deleteOneOrder(${indexBasket})"></td>
                                              <td>${item.amount}</td>
                                              <td class="basket_plus_icon backgr_hover" onclick="addOneOrder(${indexBasket})"></td>
                                              <td class="p_right p_left">${item.price.toFixed(2)}€</td>
