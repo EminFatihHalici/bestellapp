@@ -53,6 +53,7 @@ aside {
 
 .backgr_hover:hover {
     background-color: #007bff;
+    cursor: pointer;
 }
 
 .delete_bin {
