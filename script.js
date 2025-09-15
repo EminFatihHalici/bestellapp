@@ -16,8 +16,8 @@ function getDishIndex() {
 
 }
 
-function renderBasket() {
-    let basketRef = document.getElementById('basket_food_content');
+function renderBasket(renderBasketId) {
+    let basketRef = document.getElementById(renderBasketId);
     basketRef.innerHTML = "";
 
 
@@ -44,7 +44,8 @@ function addOrderToBasket(indexDishes) {
             increaseAmount(dishName);
             break;
     }
-    renderBasket();
+    renderBasket('basket_food_content');
+    renderBasket('respBasket');
 }
 
 
@@ -66,13 +67,15 @@ function increaseAmount(dishName) {
 
     basket[dishInBasketIndex].amount++
 
-    renderBasket()
+    renderBasket('basket_food_content');
+    renderBasket('respBasket');
 }
 
 function addOneOrder(indexBasket) {
     basket[indexBasket].amount++;
 
-    renderBasket();
+    renderBasket('basket_food_content');
+    renderBasket('respBasket');
 }
 
 function deleteOneOrder(indexBasket) {
@@ -82,13 +85,15 @@ function deleteOneOrder(indexBasket) {
         basket[indexBasket].amount--;
     }
 
-    renderBasket();
+    renderBasket('basket_food_content');
+    renderBasket('respBasket');
 }
 
 function deleteWholeOrder(indexBasket) {
     basket.splice(indexBasket, 1);
 
-    renderBasket();
+    renderBasket('basket_food_content');
+    renderBasket('respBasket');
 }
 
 function calcDishesPrice(indexBasket) {
@@ -99,6 +104,34 @@ function calcDishesPrice(indexBasket) {
     let dishPrice = basket[indexBasket].amount * basket[indexBasket].price;
 
     calcDishesPriceRef.innerHTML = dishPrice.toFixed(2) + "€";
+
+    calcSubTotalPrice('sub_total_price');
 }
 
+function calcSubTotalPrice(SubId) {
+    let subTotalPriceRef = document.getElementById(SubId);
+    let currentOrderPrice = 0;
+    subTotalPriceRef.innerHTML = "";
 
+    for (let indexCosts = 0; indexCosts < basket.length; indexCosts++) {
+        currentOrderPrice += basket[indexCosts].price * basket[indexCosts].amount;
+        let subTotalPrice = currentOrderPrice
+
+        subTotalPriceRef.innerHTML = `subtotal : ${subTotalPrice}`;
+
+    }
+
+}
+
+// function calcSubTotalPrice(sub_total_price) {
+// let subTotalPriceRef = document.getElementById('sub_total_price');
+// let currentOrderPrice = 0;
+// subTotalPriceRef.innerHTML = "";
+
+// for (let indexCosts = 0; indexCosts < basket.length; indexCosts++) {
+//     currentOrderPrice += basket[indexCosts].price * basket[indexCosts].amount;
+//     let subTotalPrice = currentOrderPrice;
+//     subTotalPriceRef.innerHTML = subTotalPrice.toFixed(2) + "€";
+
+// }
+// }
