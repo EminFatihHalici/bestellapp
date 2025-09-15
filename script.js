@@ -59,15 +59,15 @@ function pushToBasket(indexDishes) {
 }
 
 
-// function increaseAmount(dishName) {
-//     let dishInBasketIndex = basket.findIndex((dish) => {
-//         return dish.name === dishName;
-//     });
+function increaseAmount(dishName) {
+    let dishInBasketIndex = basket.findIndex((dish) => {
+        return dish.name === dishName;
+    });
 
-//     basket[dishInBasketIndex].amount++
+    basket[dishInBasketIndex].amount++
 
-//     renderBasket()
-// }
+    renderBasket()
+}
 
 // function addOneOrder(indexBasket) {
 //     basket[indexBasket].amount++;
