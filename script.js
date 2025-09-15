@@ -75,15 +75,15 @@ function addOneOrder(indexBasket) {
     renderBasket();
 }
 
-// function deleteOneOrder(indexBasket) {
-//     if (basket[indexBasket].amount === 1) {
-//         basket.splice(indexBasket, 1);
-//     } else {
-//         basket[indexBasket].amount--;
-//     }
+function deleteOneOrder(indexBasket) {
+    if (basket[indexBasket].amount === 1) {
+        basket.splice(indexBasket, 1);
+    } else {
+        basket[indexBasket].amount--;
+    }
 
-//     renderBasket();
-// }
+    renderBasket();
+}
 
 // function deleteWholeOrder(indexBasket) {
 //     basket.splice(indexBasket, 1);
