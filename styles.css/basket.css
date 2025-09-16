@@ -177,3 +177,11 @@ aside {
 .order_message.hidden {
     display: none;
 }
+
+@media (max-width: 550px) {
+
+    .overlay_content {
+        width: 80%;
+    }
+
+}

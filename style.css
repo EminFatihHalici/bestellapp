@@ -65,6 +65,9 @@
     background: orange;
 }
 
+.dish-category {
+    padding-left: 16px;
+}
 
 .pd_left_8 {
     padding-left: 8px;
@@ -106,4 +109,32 @@
 
 .category_title {
     padding-left: 16px;
+}
+
+@media (max-width: 550px) {
+
+    .content_restaurant_navbar {
+        justify-content: center;
+    }
+
+    .media_hide {
+        margin-right: 8px;
+    }
+
+    .restaurant_rating {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .media_hide {
+        font-size: 14px;
+        margin-right: 8px;
+    }
 }
