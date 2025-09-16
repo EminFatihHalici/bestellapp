@@ -29,6 +29,9 @@ function renderBasket(renderBasketId) {
     if (renderBasketId === 'basket_food_content') {
         calcSubTotalPrice('sub_total_price');
     }
+     if (renderBasketId === 'basket_food_content_resp') {
+        calcSubTotalPrice('sub_total_price_resp');
+    }
 
 }
 
@@ -50,7 +53,9 @@ function addOrderToBasket(indexDishes) {
             break;
     }
     renderBasket('basket_food_content')
+    renderBasket('basket_food_content_resp');
     calcSubTotalPrice('sub_total_price');
+    calcSubTotalPrice('sub_total_price_resp');
 }
 
 function pushToBasket(indexDishes) {
@@ -71,12 +76,14 @@ function increaseAmount(dishName) {
     basket[dishInBasketIndex].amount++
 
     renderBasket('basket_food_content');
+    renderBasket('basket_food_content_resp');
 }
 
 function addOneOrder(indexBasket) {
     basket[indexBasket].amount++;
 
     renderBasket('basket_food_content');
+    renderBasket('basket_food_content_resp');
 }
 
 function deleteOneOrder(indexBasket) {
@@ -87,12 +94,14 @@ function deleteOneOrder(indexBasket) {
     }
 
     renderBasket('basket_food_content');
+    renderBasket('basket_food_content_resp');
 }
 
 function deleteWholeOrder(indexBasket) {
     basket.splice(indexBasket, 1);
 
     renderBasket('basket_food_content');
+    renderBasket('basket_food_content_resp');
 }
 
 function calcDishesPrice(indexBasket) {
@@ -105,6 +114,7 @@ function calcDishesPrice(indexBasket) {
     calcDishesPriceRef.innerHTML = dishPrice.toFixed(2) + "€";
 
     calcSubTotalPrice('sub_total_price');
+    calcSubTotalPrice('sub_total_price_resp');
 }
 
 function calcSubTotalPrice(SubId) {
@@ -117,7 +127,12 @@ function calcSubTotalPrice(SubId) {
     let subTotalPrice = currentOrderPrice.toFixed(2) + "€";
     subTotalPriceRef.innerHTML = `${subTotalPrice}`;
 
-    calcTotalPrice(currentOrderPrice, 'total_price');
+    if (SubId === 'sub_total_price') {
+        calcTotalPrice(currentOrderPrice, 'total_price');
+    }
+    if (SubId === 'sub_total_price_resp') {
+        calcTotalPrice(currentOrderPrice, 'total_price_resp');
+    }
 }
 
 function calcTotalPrice(currentOrderPrice, id) {
@@ -143,4 +158,12 @@ function clearBasket() {
     subTotalPriceRef.innerHTML = `0,00€`;
     totalPriceRef.innerHTML = `0,00€`;
     renderBasket('basket_food_content');
+}
+
+function toggleRespBasket() {
+    let overlay = document.getElementById("basket_overlay");
+    overlay.classList.toggle("hidden");
+    if (!overlay.classList.contains("hidden")) {
+        renderBasket('basket_food_content_resp');
+    }
 }
