@@ -185,9 +185,9 @@ function submitOrder(type = 'desktop') {
     if (!msg) return;
 
     msg.innerHTML = "Testbestellung erfolgreich!";
-    msg.classList.remove('basket_responsive_closed');
+    msg.classList.remove('hidden');
 
     setTimeout(() => {
-        msg.classList.add('basket_responsive_closed');
+        msg.classList.add('hidden');
     }, 3000);
 }
