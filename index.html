@@ -54,8 +54,35 @@
 
         </div>
 
-        <div class="basket_responsive_closed">
+        <div class="basket_responsive_closed" onclick="toggleRespBasket()">
             <h2 class="basket_header">Warenkorb</h2>
+        </div>
+
+        <div id="basket_overlay" class="overlay hidden">
+            <div class="overlay_content">
+                 <span class="overlay_close" onclick="toggleRespBasket()">&times;</span>
+        
+                    <div class="basket">
+                        <h2 class="basket_head">Warenkorb</h2>
+                    </div>
+
+                <div class="basket_food_content" id="basket_food_content_resp"></div>
+
+                <div class="total">
+                    <div class="p_top">Zwischensumme</div>
+                    <div class="p_top" id="sub_total_price_resp"></div>
+                </div>
+
+                <div class="total">
+                    <div class="p_top">Lieferkosten</div>
+                    <div class="p_top">5€</div>
+                </div>
+
+                <div class="total">
+                    <div class="p_top total_sum">Gesamt</div>
+                    <div class="p_top total_sum" id="total_price_resp"></div>
+                </div>
+            </div>
         </div>
 
         <aside>
