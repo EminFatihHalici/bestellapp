@@ -19,7 +19,7 @@ function getNotesHTML(indexDishes) {
 }
 
 
-function getBasketTemplate(indexBasket, i) {
+function getBasketTemplate(indexBasket) {
     let item = basket[indexBasket];
     return ` 
       <p>${item.name}</p>
