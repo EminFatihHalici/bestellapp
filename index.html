@@ -60,11 +60,11 @@
 
         <div id="basket_overlay" class="overlay hidden">
             <div class="overlay_content">
-                 <span class="overlay_close" onclick="toggleRespBasket()">&times;</span>
-        
-                    <div class="basket">
-                        <h2 class="basket_head">Warenkorb</h2>
-                    </div>
+                <span class="overlay_close" onclick="toggleRespBasket()">&times;</span>
+
+                <div class="basket">
+                    <h2 class="basket_head">Warenkorb</h2>
+                </div>
 
                 <div class="basket_food_content" id="basket_food_content_resp"></div>
 
@@ -83,7 +83,10 @@
                     <div class="p_top total_sum" id="total_price_resp"></div>
                 </div>
 
-                <button class="order_btn">Bestellen</button>
+                <div class="order_section">
+                    <button class="order_btn" onclick="submitOrder('overlay')">Bestellen</button>
+                    <div id="order_message_overlay" class="basket_responsive_closed"></div>
+                </div>
             </div>
         </div>
 
@@ -112,7 +115,10 @@
                     <div class="p_top total_sum" id="total_price"></div>
                 </div>
 
-                <button class="order_btn">Bestellen</button>
+                <div class="order_section">
+                    <button class="order_btn" onclick="submitOrder()">Bestellen</button>
+                    <div class="basket_responsive_closed" id="order_message"></div>
+                </div>
 
             </div>
 
