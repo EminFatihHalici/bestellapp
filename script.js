@@ -23,6 +23,10 @@ function renderBasket(renderBasketId) {
     for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
         basketRef.innerHTML += getBasketTemplate(indexBasket);
     }
+
+    if (renderBasketId === 'basket_food_content') {
+        calcSubTotalPrice('sub_total_price');
+    }
 }
 
 
@@ -117,6 +121,17 @@ function calcSubTotalPrice(SubId) {
     }
         let subTotalPrice = currentOrderPrice.toFixed(2) + "€";
         subTotalPriceRef.innerHTML = `${subTotalPrice}`;
+
+        calcTotalPrice(currentOrderPrice, 'total_price');
+}
+
+
+function calcTotalPrice(currentOrderPrice, id) {
+    let totalPriceRef = document.getElementById(id);
+    let totalPriceNum = currentOrderPrice + 5;
+    let totalPrice = totalPriceNum.toFixed(2) + "€";
+    totalPriceRef.innerHTML = "";
+    totalPriceRef.innerHTML = `${totalPrice}`;
 }
 
 // function calcSubTotalPrice(sub_total_price) {
