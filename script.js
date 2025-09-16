@@ -3,6 +3,8 @@ let cart = [];
 
 function init() {
     getDishIndex();
+    calcSubTotalPrice("sub_total_price");
+    calcTotalPrice(0, "total_price");
 }
 
 function getDishIndex() {
@@ -15,19 +17,35 @@ function getDishIndex() {
 
 }
 
-function renderBasket(renderBasketId) {
-    let basketRef = document.getElementById(renderBasketId);
-    basketRef.innerHTML = "";
+function renderBasket() {
+    let normalBasket = document.getElementById("basket_food_content");
+    let respBasket = document.getElementById("basket_food_content_resp");
+    normalBasket.innerHTML = "";
+    respBasket.innerHTML = "";
 
-
-    for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
-        basketRef.innerHTML += getBasketTemplate(indexBasket);
+    for (let i = 0; i < basket.length; i++) {
+        let itemHTML = getBasketTemplate(i);
+        normalBasket.innerHTML += itemHTML;
+        respBasket.innerHTML += itemHTML;
     }
 
-    if (renderBasketId === 'basket_food_content') {
-        calcSubTotalPrice('sub_total_price');
-    }
-}
+    calcSubTotalPrice('sub_total_price');
+    calcSubTotalPrice('sub_total_price_resp');
+}   
+// function renderBasket(renderBasketId) {
+//     let basketRef = document.getElementById(renderBasketId);
+//     basketRef.innerHTML = "";
+
+
+//     for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
+//         basketRef.innerHTML += getBasketTemplate(indexBasket);
+//     }
+
+//     if (renderBasketId === 'basket_food_content') {
+//         calcSubTotalPrice('sub_total_price');
+//     }
+
+// }
 
 
 function addOrderToBasket(indexDishes) {
@@ -47,8 +65,7 @@ function addOrderToBasket(indexDishes) {
             increaseAmount(dishName);
             break;
     }
-    renderBasket('basket_food_content');
-    renderBasket('respBasket');
+ renderBasket();
     calcSubTotalPrice('sub_total_price');
 }
 
@@ -71,15 +88,13 @@ function increaseAmount(dishName) {
 
     basket[dishInBasketIndex].amount++
 
-    renderBasket('basket_food_content');
-    renderBasket('respBasket');
+    renderBasket();
 }
 
 function addOneOrder(indexBasket) {
     basket[indexBasket].amount++;
 
-    renderBasket('basket_food_content');
-    renderBasket('respBasket');
+    renderBasket();
 }
 
 function deleteOneOrder(indexBasket) {
@@ -89,15 +104,13 @@ function deleteOneOrder(indexBasket) {
         basket[indexBasket].amount--;
     }
 
-    renderBasket('basket_food_content');
-    renderBasket('respBasket');
+    renderBasket();
 }
 
 function deleteWholeOrder(indexBasket) {
     basket.splice(indexBasket, 1);
 
-    renderBasket('basket_food_content');
-    renderBasket('respBasket');
+    renderBasket();
 }
 
 function calcDishesPrice(indexBasket) {
@@ -125,7 +138,6 @@ function calcSubTotalPrice(SubId) {
     calcTotalPrice(currentOrderPrice, 'total_price');
 }
 
-
 function calcTotalPrice(currentOrderPrice, id) {
     let totalPriceRef = document.getElementById(id);
     let deliveryCosts = 5;
@@ -148,5 +160,37 @@ function clearBasket() {
     basket = [];
     subTotalPriceRef.innerHTML = `0,00€`;
     totalPriceRef.innerHTML = `0,00€`;
-    renderBasket('basket_food_content');
+    renderBasket();;
 }
+
+function toggleRespBasket() {
+    let respBasketDiv = document.getElementById("respBasket");
+    respBasketDiv.classList.toggle("basket_responsive_open");
+    respBasketDiv.classList.toggle("basket_responsive_closed");
+}
+
+// function checkBasket() {
+//     let checkBasketTotalRef = document.getElementById("total_price");
+//     let checkRespBasketTotalRef = document.getElementById("total_price_resp");
+
+//     let checkBasketSubRef = document.getElementById("sub_total_price");
+//     let checkRespBasketSubRef = document.getElementById("sub_total_price_resp");
+
+//     let currentOrderPrice = 0;
+
+//     for (let index = 0; index < basket.length; index++) {
+//         currentOrderPrice += basket[index].price * basket[index].amount;
+//     }
+
+//     let subTotal = currentOrderPrice.toFixed(2) + "€";
+
+//     let deliveryCosts = 5;
+//     let totalPriceNum = basket.length > 0 ? currentOrderPrice + deliveryCosts : 0;
+//     let total_price =totalPriceNum.toFixed(2) + "€";
+
+//     checkBasketSubRef.innerHTML = `${subTotal}`;
+//   checkRespBasketSubRef.innerHTML = `${subTotal}`;
+
+//   checkBasketTotalRef.innerHTML = `${totalPrice}`;
+//   checkRespBasketTotalRef.innerHTML = `${totalPrice}`;
+// }
