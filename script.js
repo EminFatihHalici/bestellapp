@@ -144,35 +144,3 @@ function clearBasket() {
     totalPriceRef.innerHTML = `0,00€`;
     renderBasket('basket_food_content');
 }
-
-function toggleRespBasket() {
-    let respBasketDiv = document.getElementById("respBasket");
-    respBasketDiv.classList.toggle("basket_responsive_open");
-    respBasketDiv.classList.toggle("basket_responsive_closed");
-}
-
-// function checkBasket() {
-//     let checkBasketTotalRef = document.getElementById("total_price");
-//     let checkRespBasketTotalRef = document.getElementById("total_price_resp");
-
-//     let checkBasketSubRef = document.getElementById("sub_total_price");
-//     let checkRespBasketSubRef = document.getElementById("sub_total_price_resp");
-
-//     let currentOrderPrice = 0;
-
-//     for (let index = 0; index < basket.length; index++) {
-//         currentOrderPrice += basket[index].price * basket[index].amount;
-//     }
-
-//     let subTotal = currentOrderPrice.toFixed(2) + "€";
-
-//     let deliveryCosts = 5;
-//     let totalPriceNum = basket.length > 0 ? currentOrderPrice + deliveryCosts : 0;
-//     let total_price =totalPriceNum.toFixed(2) + "€";
-
-//     checkBasketSubRef.innerHTML = `${subTotal}`;
-//   checkRespBasketSubRef.innerHTML = `${subTotal}`;
-
-//   checkBasketTotalRef.innerHTML = `${totalPrice}`;
-//   checkRespBasketTotalRef.innerHTML = `${totalPrice}`;
-// }
