@@ -11,10 +11,27 @@ function getDishIndex() {
     let dishContentRef = document.getElementById('content_div')
     dishContentRef.innerHTML = "";
 
-    for (let indexDishes = 0; indexDishes < dishes.length; indexDishes++) {
-        dishContentRef.innerHTML += getNotesHTML(indexDishes);
-    }
+    let categories = [
+        { id: "category-pizza", name: "Pizza" },
+        { id: "category-pasta", name: "Pasta" },
+        { id: "category-steak", name: "Steak" },
+        { id: "category-vorspeise", name: "Vorspeise" },
+        { id: "category-nachspeise", name: "Nachspeise" }
+    ];
 
+    categories.forEach(cat => {
+        dishContentRef.innerHTML += `<section id="${cat.id}" class="dish-category">
+                                        <h2>${cat.name}</h2>
+                                      </section>`;
+        
+        let categorySection = document.getElementById(cat.id);
+
+        dishes.forEach((dish, indexDishes) => {
+            if (dish.category.toLowerCase() === cat.name.toLowerCase()) {
+                categorySection.innerHTML += getNotesHTML(indexDishes);
+            }
+        });
+    });
 }
 
 function renderBasket(renderBasketId) {
