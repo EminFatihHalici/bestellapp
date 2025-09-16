@@ -29,7 +29,7 @@ function renderBasket(renderBasketId) {
     if (renderBasketId === 'basket_food_content') {
         calcSubTotalPrice('sub_total_price');
     }
-     if (renderBasketId === 'basket_food_content_resp') {
+    if (renderBasketId === 'basket_food_content_resp') {
         calcSubTotalPrice('sub_total_price_resp');
     }
 
@@ -151,13 +151,21 @@ function calcTotalPrice(currentOrderPrice, id) {
 }
 
 function clearBasket() {
+    basket = [];
+
     let subTotalPriceRef = document.getElementById("sub_total_price");
     let totalPriceRef = document.getElementById("total_price");
-
-    basket = [];
     subTotalPriceRef.innerHTML = `0,00€`;
     totalPriceRef.innerHTML = `0,00€`;
+
+    let subTotalPriceRefResp = document.getElementById("sub_total_price_resp");
+    let totalPriceRefResp = document.getElementById("total_price_resp");
+    subTotalPriceRefResp.innerHTML = `0,00€`;
+    totalPriceRefResp.innerHTML = `0,00€`;
+
     renderBasket('basket_food_content');
+    renderBasket('basket_food_content_resp');
+
 }
 
 function toggleRespBasket() {
@@ -166,4 +174,20 @@ function toggleRespBasket() {
     if (!overlay.classList.contains("hidden")) {
         renderBasket('basket_food_content_resp');
     }
+}
+
+function submitOrder(type = 'desktop') {
+    clearBasket();
+
+    let msgId = type === 'desktop' ? 'order_message' : 'order_message_overlay';
+    let msg = document.getElementById(msgId);
+
+    if (!msg) return;
+
+    msg.innerHTML = "Testbestellung erfolgreich!";
+    msg.classList.remove('basket_responsive_closed');
+
+    setTimeout(() => {
+        msg.classList.add('basket_responsive_closed');
+    }, 3000);
 }
