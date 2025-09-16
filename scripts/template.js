@@ -20,33 +20,17 @@ function getNotesHTML(indexDishes) {
 
 
 function getBasketTemplate(indexBasket, i) {
-
     let item = basket[indexBasket];
-
     return ` 
-
-
-
-
       <p>${item.name}</p>
-
-
-
-
             <table class="basket_order"
-                                         <tr>
-                                             <td class="basket_minus_icon backgr_hover" onclick="deleteOneOrder(${indexBasket})"></td>
-                                             <td>${item.amount}</td>
-                                             <td class="basket_plus_icon backgr_hover" onclick="addOneOrder(${indexBasket})"></td>
-                                             <td  id="order_price_${indexBasket}"class="p_right p_left">${(item.amount * item.price).toFixed(2)}€</td>
-                                             <td><img class="delete_bin backgr_hover"  onclick="deleteWholeOrder(${indexBasket})" src="./assets/pictures/trash-can-10412.svg" alt="Löschen"></td>
-                                         </tr>
-
+                <tr>
+                    <td class="basket_minus_icon backgr_hover" onclick="deleteOneOrder(${indexBasket})"></td>
+                    <td>${item.amount}</td>
+                    <td class="basket_plus_icon backgr_hover" onclick="addOneOrder(${indexBasket})"></td>
+                    <td  id="order_price_${indexBasket}"class="p_right p_left">${(item.amount * item.price).toFixed(2)}€</td>
+                    <td><img class="delete_bin backgr_hover"  onclick="deleteWholeOrder(${indexBasket})" src="./assets/pictures/trash-can-10412.svg" alt="Löschen"></td>
+                </tr>
             </table>
-    
-    
-    </div>
-
-    `
-
+    `;
 }
