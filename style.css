@@ -66,7 +66,7 @@
 }
 
 .dish-category {
-    padding-left: 16px;
+    padding: 16px;
 }
 
 .pd_left_8 {
@@ -80,6 +80,10 @@
 
     .content_total {
         flex-direction: column;
+    }
+
+    .content_restaurant_navbar {
+        justify-content: center;
     }
 }
 
@@ -115,10 +119,6 @@
 
     .content_restaurant_navbar {
         justify-content: center;
-    }
-
-    .media_hide {
-        margin-right: 8px;
     }
 
     .restaurant_rating {
