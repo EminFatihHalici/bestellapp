@@ -5,6 +5,7 @@ function init() {
     getDishIndex();
     calcSubTotalPrice("sub_total_price");
     calcTotalPrice(0, "total_price");
+    toggleOrderButton();
 }
 
 function getDishIndex() {
@@ -23,7 +24,7 @@ function getDishIndex() {
         dishContentRef.innerHTML += `<section id="${cat.id}" class="dish-category">
                                         <h2>${cat.name}</h2>
                                       </section>`;
-        
+
         let categorySection = document.getElementById(cat.id);
 
         dishes.forEach((dish, indexDishes) => {
@@ -73,6 +74,7 @@ function addOrderToBasket(indexDishes) {
     renderBasket('basket_food_content_resp');
     calcSubTotalPrice('sub_total_price');
     calcSubTotalPrice('sub_total_price_resp');
+    toggleOrderButton();
 }
 
 function pushToBasket(indexDishes) {
@@ -112,6 +114,7 @@ function deleteOneOrder(indexBasket) {
 
     renderBasket('basket_food_content');
     renderBasket('basket_food_content_resp');
+    toggleOrderButton();
 }
 
 function deleteWholeOrder(indexBasket) {
@@ -119,6 +122,7 @@ function deleteWholeOrder(indexBasket) {
 
     renderBasket('basket_food_content');
     renderBasket('basket_food_content_resp');
+    toggleOrderButton();
 }
 
 function calcDishesPrice(indexBasket) {
@@ -206,5 +210,19 @@ function submitOrder(type = 'desktop') {
 
     setTimeout(() => {
         msg.classList.add('hidden');
+        toggleOrderButton();
     }, 3000);
+}
+
+function toggleOrderButton() {
+    let btnDesktop = document.getElementById('order_btn_desktop');
+    let btnOverlay = document.getElementById('order_btn_overlay');
+
+    if (basket.length > 0) {
+        btnDesktop.classList.remove('hidden');
+        btnOverlay.classList.remove('hidden');
+    } else {
+        btnDesktop.classList.add('hidden');
+        btnOverlay.classList.add('hidden');
+    }
 }
