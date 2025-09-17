@@ -190,5 +190,5 @@ aside {
 
 .basket_food_content {
     overflow: auto;
-    max-height: 550px;
+    max-height: calc(100dvh - 270px);
 }
