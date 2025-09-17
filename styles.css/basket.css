@@ -1,6 +1,6 @@
 .basket_stickyrail {
     position: sticky;
-    top: 0;
+    top: 10px;
     padding-bottom: 16px;
     text-align: center;
     border-bottom: solid;
@@ -101,7 +101,7 @@ aside {
 }
 
 .basket_header:hover {
-    color: purple;
+    color: yellow;
     font-size: xx-large;
     cursor: pointer;
 }
@@ -111,6 +111,8 @@ aside {
         display: block;
         width: 100%;
         background-color: blue;
+        position: sticky;
+        bottom: 0;
     }
 
     aside {
@@ -184,4 +186,9 @@ aside {
         width: 80%;
     }
 
+}
+
+.basket_food_content {
+    overflow: auto;
+    max-height: 550px;
 }
